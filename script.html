@@ -1,0 +1,36 @@
+<html>
+<body ononline="offline()">
+<h1>Offline example</h1>
+<input type="text" value="hello" onchange="function1()">
+<button onclick="function2()">Submit</button>
+
+<p ondblclick="function3()">double click this paragraph to call a
+function</p>
+
+<p draggable="true" ondrag="function4()" >drag this paragraph to
+call a function</p>
+
+<script>
+function function1() {
+alert("The input value has changed ");
+
+}
+function function2() {
+alert("when you click on button function2 is called and displayes alert message ");
+}
+function function3() {
+alert("when you double click on paragraph element function3 is called and displayes alert message ");
+
+}
+function function4() {
+alert("when you drag this paragraph element function4 is called and displayes alert message ");
+
+}
+
+function offline(){
+alert("Browser works in offline mode ");
+console.log("online mode ");
+}
+</script>
+</body>
+</html>

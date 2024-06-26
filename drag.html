@@ -1,0 +1,23 @@
+<html>
+    <head>
+        <Style>
+            .droptarget{
+                padding: 10px;
+                height: 50px;
+                width: 50px;
+                border: 1px black;
+
+            }
+        </Style>
+        <body>
+            <h1>Drag and Drop</h1>
+            <div class="droptarget" ondrop="drop(event)" ondragover="allowdrop(event)">
+                <p ondragstart="dragstart(event)" draggable="true" id="dragtarget">Drag me</p>
+                </div>
+            </br>
+            <div class="droptarget" ondrop="drop(event)" ondragover="allowdrop(event)"></div>
+
+
+        </body>
+    </head>
+</html>

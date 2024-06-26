@@ -1,0 +1,39 @@
+<html>
+    <head>
+        <body>
+            <style>
+                h1{
+                    font-style: italic;
+                    font-weight: bolder;
+                    font-size: larger;
+                    padding: 1px;
+                }
+            </style>
+            <h1>Html Page</h1>
+            <h2 onclick="myfunction()">This Page</h2>
+            <h3 id="example" onclick="myfunction1()">click this text to change the color</h3>
+            <button onclick="clickme()">clickme</button>
+            <h4 draggable="true" ondrag="drag()">drag me</h4>
+            <p ondblclick="firstclick()">click first</p>
+            <script>
+                function myfunction(){
+                    alert("alert message");
+                }
+                function myfunction1(){
+                    document.getElementById("example").style.color="yellow";
+                }
+                    function clickme(){
+                        alert("alert message");
+
+                    }
+                    function drag(){
+                        alert("alert message shown")
+                    }
+                    function firstclick(){
+                        alert("message")
+                    }
+
+            </script>
+        </body>
+    </head>
+</html>
