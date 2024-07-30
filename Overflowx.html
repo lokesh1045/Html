@@ -1,0 +1,73 @@
+<html>
+<head>
+<style> 
+div.ex1 {
+  background-color: lightblue;
+  height: 70px;
+  width: 200px;
+overflow-y: scroll;
+}
+
+div.ex2 {
+  background-color: lightblue;
+  height: 40px;
+  width: 200px;
+  overflow-y: hidden;}
+
+div.ex3 {
+  background-color: lightblue;
+  height: 40px;
+  width: 70px;
+    overflow-y: auto;
+}
+
+div.ex4 {
+  background-color: lightblue;
+  height: 40px;
+  width: 70px;
+  overflow-y: visible;}
+  div.a{
+overflow-wrap: break-word;
+
+  width: 150px; 
+  border: 1px solid #000000;
+
+  }
+  div.b{
+    overflow-wrap: normal;
+    width: 150px; 
+    border: 1px solid #000000;
+  }
+  div.c{
+    overflow-anchor: none;
+    width: 150px; 
+    border: 1px solid #000000;
+  }
+  
+</style>
+</head>
+<body>
+
+<h1>The overflow-y Property</h1>
+
+
+<h2>overflow-y: scroll:</h2>
+<div class="ex1">Hilokesh Helloworld Namasteindia lkjdjhskdhgsdfgsjhdf</div>
+
+<h2>overflow-y: hidden:</h2>
+<div class="ex2">Hilokesh Helloworld Namasteindia jhkggfthddgdgdghfhf hhgjffhgh hggjgf</div>
+
+<h2>overflow-y: auto:</h2>
+<div class="ex3">Hilokesh Helloworld Namasteindia</div>
+
+<h2>overflow-y: visible (default):</h2>
+<div class="ex4">Hilokesh Helloworld Namasteindia</div>
+<h3>overwrap-breakwood property</h3>
+<div class="a">This div contains a very long word: thisisaveryveryveryveryveryverylongword. The long word will not break and wrap to the next line.</div>
+<h3>overwrap-normal  property</h3>
+<div class="b">This div contains a very long word: thisisaveryveryveryveryveryverylongword. The long word will not break and wrap to the next line.</div>
+<h3>Anchor Property</h3>
+<div class="c">This div contains a very long word: thisisaveryveryveryveryveryverylongword. The long word will not break and wrap to the next line.</div>
+
+</body>
+</html>
