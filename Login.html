@@ -1,0 +1,32 @@
+<html>
+<head>
+    <title>Login Page</title>
+    <script>
+        function login() {
+            var username = document.getElementById("username").value;
+            var password = document.getElementById("password").value;
+            if (username === "Admin") {
+                if (password === "Admin@123") {
+                    alert("Login success");
+                } else {
+                    alert("Incorrect password");
+                }
+            } else {
+                alert("Incorrect username");
+            }
+        }
+    </script>
+</head>
+<body>
+    <h2>Login Form</h2>
+    <form onsubmit="event.preventDefault(); login();">
+        <label for="username">Username:</label>
+        <input type="text" id="username" name="username" required><br><br>
+
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" required><br><br>
+
+        <input type="submit" value="Login">
+    </form>
+</body>
+</html>

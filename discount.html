@@ -1,0 +1,24 @@
+<html>
+<head>
+    <title>Discount Calculator</title>
+    <script>
+        function actualPrice(costPrice) {
+            var discount = 0.20; 
+            var discountAmount = costPrice * discount; 
+            var sellingPrice = costPrice - discountAmount; 
+            alert("The selling price after applying 20% discount is: " + sellingPrice.toFixed(2));
+        } 
+        function getPriceDetails() {
+            var costPrice = parseFloat(document.getElementById("costPrice").value);
+            actualPrice(costPrice);
+        }
+    </script>
+</head>
+<body>
+    <h2>Discount Calculator</h2>
+    <label for="costPrice">Enter Cost Price:</label>
+    <input type="number" id="costPrice" name="costPrice" required><br><br>
+
+    <button onclick="getPriceDetails()">Calculate Selling Price</button>
+</body>
+</html>

@@ -1,0 +1,23 @@
+<html>
+<head>
+    <title>Salary Calculator</title>
+    <script>
+        function calculateSalary(monthlyPay, deductions) {
+            var fixedSalary = 25000; 
+            var netSalary = fixedSalary - deductions; 
+            alert("The final salary after deductions is: " + netSalary);
+        }
+     function getSalaryDetails() {
+            var monthlyPay = 25000; 
+            var deductions = parseFloat(document.getElementById("deductions").value);
+      calculateSalary(monthlyPay, deductions);
+        }
+    </script>
+</head>
+<body>
+    <h2>Salary Calculator</h2>
+    <label for="deductions">Enter Deductions:</label>
+    <input type="number" id="deductions" name="deductions" required><br><br>
+ <button onclick="getSalaryDetails()">Calculate Salary</button>
+</body>
+</html>
