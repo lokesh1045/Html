@@ -1,0 +1,18 @@
+<html>
+<head>
+    <title>Sort Array in Descending Order</title>
+    <script>
+        function sortArrayDescending() {
+            var array = [23, 45, 12, 67, 34, 89, 1, 90]; 
+            array.sort(function(a, b) {
+                return b - a; 
+            });
+            alert("Array sorted in descending order: " + array);
+        }
+    </script>
+</head>
+<body>
+    <h2>Sort Array in Descending Order</h2>
+    <button onclick="sortArrayDescending()">Sort Array</button>
+</body>
+</html>

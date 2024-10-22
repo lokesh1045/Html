@@ -1,0 +1,53 @@
+<html>
+<head>
+    <title>Bank Account</title>
+    <script>
+        function BankAccount(accountNumber, accountHolderName, balance) {
+            this.accountNumber = accountNumber;
+            this.accountHolderName = accountHolderName;
+            this.balance = balance;
+            this.deposit = function (amount) {
+                this.balance += amount;
+                alert("Deposit successful! New Balance: " + this.balance);
+            };
+            this.withdraw = function (amount) {
+                if (amount > this.balance) {
+                    alert("Insufficient balance!");
+                } else {
+                    this.balance -= amount;
+                    alert("Withdrawal successful! New Balance: " + this.balance);
+                }
+            };
+            this.checkBalance = function () {
+                alert("Your current balance is: " + this.balance);
+            };
+        }
+        var myAccount = new BankAccount("123456789", "John Doe", 5000); 
+        function depositAmount() {
+            var amount = parseFloat(document.getElementById("deposit").value);
+            myAccount.deposit(amount);
+        }
+
+        function withdrawAmount() {
+            var amount = parseFloat(document.getElementById("withdraw").value);
+            myAccount.withdraw(amount);
+        }
+
+        function showBalance() {
+            myAccount.checkBalance();
+        }
+    </script>
+</head>
+<body>
+    <h2>Bank Account System</h2>
+    <p>Account Holder: John Doe</p>
+    <p>Account Number: 123456789</p>
+    <label for="deposit">Deposit Amount:</label>
+    <input type="number" id="deposit" name="deposit"><br><br>
+    <button onclick="depositAmount()">Deposit</button><br><br>
+    <label for="withdraw">Withdraw Amount:</label>
+    <input type="number" id="withdraw" name="withdraw"><br><br>
+    <button onclick="withdrawAmount()">Withdraw</button><br><br>
+    <button onclick="showBalance()">Check Balance</button>
+</body>
+</html>
